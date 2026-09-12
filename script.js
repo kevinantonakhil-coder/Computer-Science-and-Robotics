@@ -22,7 +22,6 @@ const photos=[
 ];
 window.addEventListener('load',()=>{if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.body.classList.add('opening-active');setTimeout(()=>document.body.classList.remove('opening-active'),4300)}});
 const mediaPath=file=>'media/'+encodeURIComponent(file);
-document.querySelectorAll('.stem-node').forEach(node=>node.addEventListener('click',()=>{document.querySelectorAll('.stem-node').forEach(item=>{const active=item===node;item.classList.toggle('active',active);item.setAttribute('aria-expanded',active?'true':'false')})}));
 const tile=(item,index)=>`<button class="gallery-tile" data-index="${index}" aria-label="Open ${item.label}"><img loading="lazy" src="${mediaPath(item.file)}" alt="${item.label}"><span class="tile-label">${item.label}</span></button>`;
 const robotics=document.querySelector('#robotics-gallery');
 const roboticsItems=photos.filter(p=>p.cat==='robotics'||p.cat==='stem').slice(0,4);
