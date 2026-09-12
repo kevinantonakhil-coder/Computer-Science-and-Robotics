@@ -20,6 +20,7 @@ const photos=[
  {file:'WhatsApp Image 2026-09-11 at 4.16.00 PM (2).jpeg',cat:'robotics',label:'Build and connect'},
  {file:'WhatsApp Image 2026-09-11 at 4.16.00 PM (3).jpeg',cat:'robotics',label:'Team engineering'}
 ];
+window.addEventListener('load',()=>{if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.body.classList.add('opening-active');setTimeout(()=>document.body.classList.remove('opening-active'),4300)}});
 const mediaPath=file=>'media/'+encodeURIComponent(file);
 const tile=(item,index)=>`<button class="gallery-tile" data-index="${index}" aria-label="Open ${item.label}"><img loading="lazy" src="${mediaPath(item.file)}" alt="${item.label}"><span class="tile-label">${item.label}</span></button>`;
 const robotics=document.querySelector('#robotics-gallery');
