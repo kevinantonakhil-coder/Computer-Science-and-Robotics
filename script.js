@@ -82,6 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroImg = document.getElementById('heroImg');
   const roboticsParallax = document.getElementById('roboticsParallax');
   const aboutParallax = document.getElementById('aboutParallax');
+  const backToTop = document.getElementById('backToTop');
+  backToTop.hidden = false;
 
   function onScroll() {
     const scrollTop = window.scrollY;
@@ -158,8 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ============ BACK TO TOP ============ */
-  const backToTop = document.getElementById('backToTop');
-  backToTop.hidden = false;
   backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   /* ============ STEM INTERACTIVE CARDS ============ */
