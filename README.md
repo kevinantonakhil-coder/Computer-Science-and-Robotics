@@ -1,10 +1,10 @@
-# St. Mary's Robotics Department
+# St. Mary's Computer Science and STEM
 
-The Technology & Innovation website for St. Mary's Private High School, Ras Al Khaimah, UAE.
+The Computer Science and STEM website for St. Mary's Private High School, Ras Al Khaimah, UAE.
 
 ## Included
 
-- Responsive landing page for Computer Science, STEM, and Robotics
+- Responsive landing page for Computer Science and STEM
 - Real school photography and workshop videos
 - Filterable gallery with lightbox navigation
 - Responsive mobile navigation and scroll animations
