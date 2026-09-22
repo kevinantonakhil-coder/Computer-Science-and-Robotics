@@ -1,17 +1,17 @@
 const photos=[
- {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM.jpeg',cat:'stem',label:'Scratch / First steps'},
+ {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM.jpeg',cat:'computer-science',label:'Scratch / First steps'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM (1).jpeg',cat:'computer-science',label:'Creative coding'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM (2).jpeg',cat:'computer-science',label:'Collaborative making'},
- {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM (3).jpeg',cat:'stem',label:'Build together'},
+ {file:'WhatsApp Image 2026-09-11 at 4.13.56 PM (3).jpeg',cat:'computer-science',label:'Build together'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.57 PM.jpeg',cat:'computer-science',label:'Digital storytelling'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.57 PM (1).jpeg',cat:'computer-science',label:'Interface design'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.57 PM (2).jpeg',cat:'computer-science',label:'Code in context'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.57 PM (3).jpeg',cat:'computer-science',label:'Prototype review'},
  {file:'WhatsApp Image 2026-09-11 at 4.13.57 PM (4).jpeg',cat:'computer-science',label:'Ideas on screen'},
  {file:'WhatsApp Image 2026-09-11 at 4.15.55 PM.jpeg',cat:'computer-science',label:'Peer learning'},
- {file:'WhatsApp Image 2026-09-11 at 4.15.55 PM (1).jpeg',cat:'stem',label:'Design challenge'},
- {file:'WhatsApp Image 2026-09-11 at 4.15.57 PM.jpeg',cat:'stem',label:'Learning by making'},
- {file:'WhatsApp Image 2026-09-11 at 4.15.57 PM (1).jpeg',cat:'stem',label:'Test and iterate'},
+ {file:'WhatsApp Image 2026-09-11 at 4.15.55 PM (1).jpeg',cat:'computer-science',label:'Design challenge'},
+ {file:'WhatsApp Image 2026-09-11 at 4.15.57 PM.jpeg',cat:'computer-science',label:'Learning by making'},
+ {file:'WhatsApp Image 2026-09-11 at 4.15.57 PM (1).jpeg',cat:'computer-science',label:'Test and iterate'},
  {file:'WhatsApp Image 2026-09-11 at 4.15.59 PM.jpeg',cat:'computer-science',label:'Digital fluency'},
  {file:'WhatsApp Image 2026-09-11 at 4.15.59 PM (1).jpeg',cat:'computer-science',label:'A closer look'},
  {file:'WhatsApp Image 2026-09-11 at 4.15.59 PM (2).jpeg',cat:'computer-science',label:'Debugging together'},
@@ -24,7 +24,7 @@ window.addEventListener('load',()=>{if(!window.matchMedia('(prefers-reduced-moti
 const mediaPath=file=>'media/'+encodeURIComponent(file);
 const tile=(item,index)=>`<button class="gallery-tile" data-index="${index}" aria-label="Open ${item.label}"><img loading="lazy" src="${mediaPath(item.file)}" alt="${item.label}"><span class="tile-label">${item.label}</span></button>`;
 const robotics=document.querySelector('#robotics-gallery');
-const roboticsItems=photos.filter(p=>p.cat==='robotics'||p.cat==='stem').slice(0,4);
+const roboticsItems=photos.filter(p=>p.cat==='robotics').slice(0,4);
 robotics.innerHTML=roboticsItems.map(item=>tile(item,photos.indexOf(item))).join('');
 const grid=document.querySelector('#gallery-grid');
 function render(filter='all'){const items=filter==='all'?photos:photos.filter(p=>p.cat===filter);grid.innerHTML=items.map(item=>tile(item,photos.indexOf(item))).join('');grid.querySelectorAll('.gallery-tile').forEach(btn=>btn.addEventListener('click',()=>openLightbox(Number(btn.dataset.index))));}
