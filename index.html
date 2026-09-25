@@ -24,13 +24,14 @@
       <span><strong>ST. MARY'S</strong><small>Computer Science &amp; Robotics</small></span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#disciplines">Explore</a><a href="#computer-science">Computer Science</a><a href="#robotics">Robotics</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a href="#disciplines">Explore</a><a href="#about">About</a><a href="#computer-science">Computer Science</a><a href="#robotics">Robotics</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
     </nav>
     <a class="header-cta" href="#contact">Get involved <span>↗</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i></i><i></i></button>
   </header>
-  <div class="mobile-menu">
-    <a href="#disciplines">Explore <span>↗</span></a><a href="#computer-science">Computer Science <span>↗</span></a><a href="#robotics">Robotics <span>↗</span></a><a href="#gallery">Gallery <span>↗</span></a><a href="#contact">Contact <span>↗</span></a>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-head"><span>Navigate</span><button class="menu-close" type="button" aria-label="Close menu">×</button></div>
+    <nav aria-label="Mobile navigation"><a href="#disciplines">Explore <span>↗</span></a><a href="#about">About <span>↗</span></a><a href="#computer-science">Computer Science <span>↗</span></a><a href="#robotics">Robotics <span>↗</span></a><a href="#gallery">Gallery <span>↗</span></a><a href="#contact">Contact <span>↗</span></a></nav>
   </div>
 
   <main>
@@ -71,6 +72,15 @@
       </div>
     </section>
 
+    <section class="about-section section-blue" id="about">
+      <div class="section-label light reveal"><span>03 / About the department</span><span>Curiosity · Craft · Collaboration</span></div>
+      <div class="about-layout">
+        <div class="about-heading reveal"><p class="eyebrow gold">The bigger picture</p><h2>Learn to shape<br><em>what comes next.</em></h2></div>
+        <div class="about-copy reveal"><p>Computer Science &amp; Robotics gives students a place to turn curiosity into practical skills. Through programming, digital design, electronics and robotics, they learn how to break down a challenge, build a solution and improve it with others.</p><p>The department is a shared workshop: part classroom, part studio and part testing ground for ideas that can make a difference.</p></div>
+      </div>
+      <div class="about-pillars reveal"><div><b>01</b><span>Think clearly</span><small>Ask better questions</small></div><div><b>02</b><span>Build boldly</span><small>Turn ideas into prototypes</small></div><div><b>03</b><span>Work together</span><small>Share, test and improve</small></div></div>
+    </section>
+
     <section class="split-section section-blue" id="computer-science">
       <div class="section-label light reveal"><span>02 / Computer science</span><span>Think logically · Build digitally</span></div>
       <div class="split-layout">
@@ -106,7 +116,7 @@
     <section class="gallery-section section-light" id="gallery">
       <div class="section-label reveal"><span>05 / The archive</span><span>Real moments from the lab</span></div>
       <div class="gallery-head"><div class="reveal"><p class="eyebrow blue">In the making</p><h2>Small steps.<br><span>Real work.</span></h2></div><p class="gallery-intro reveal">A living archive of students learning by doing. Browse the moments, experiments and collaborations that make the lab theirs.</p></div>
-      <div class="filter-bar reveal" role="tablist"><button class="active" data-filter="all">All work</button><button data-filter="computer-science">Computer science</button><button data-filter="robotics">Robotics</button></div>
+      <div class="gallery-toolbar reveal"><div class="filter-bar" role="tablist" aria-label="Filter project gallery"><button class="active" role="tab" aria-selected="true" data-filter="all">All work</button><button role="tab" aria-selected="false" data-filter="computer-science">Computer science</button><button role="tab" aria-selected="false" data-filter="robotics">Robotics</button></div><span class="gallery-count">20 moments · updated 2026</span></div>
       <div class="gallery-grid reveal" id="gallery-grid"></div>
     </section>
 
