@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260925-about">
+  <link rel="stylesheet" href="styles.css?v=20260925-about2">
   <style>
     .gallery-count{display:none!important}
     .about-layout{max-width:1200px;margin:0 auto;padding:90px 5vw 70px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:10%;align-items:start}
@@ -23,12 +23,18 @@
     .about-pillars span,.about-pillars small{display:block}
     .about-pillars span{color:#fff;font:500 21px "Space Grotesk"}
     .about-pillars small{color:rgba(255,255,255,.58);font:11px var(--mono);margin-top:9px}
+    .about-section .about-layout{display:grid!important}
+    .about-section .about-copy p{display:block!important}
+    .about-section .about-pillars{display:grid!important}
+    .about-section .about-pillars div{display:block!important}
     @media(max-width:800px){
       .about-layout{display:block;padding:58px 7vw 48px}
       .about-heading h2{font-size:54px;margin-bottom:34px}
       .about-copy{padding-top:0}
       .about-copy p{font-size:16px;line-height:1.75}
       .about-pillars{display:block;margin:0 7vw}
+      .about-section .about-layout{display:block!important}
+      .about-section .about-pillars{display:block!important}
       .about-pillars div{padding:20px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.22)}
       .about-pillars div:last-child{border-bottom:0}
       .about-pillars b{display:inline-block;margin:0 18px 0 0}
