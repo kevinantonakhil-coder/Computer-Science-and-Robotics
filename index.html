@@ -8,7 +8,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260925-about">
+  <style>
+    .gallery-count{display:none!important}
+    .about-layout{max-width:1200px;margin:0 auto;padding:90px 5vw 70px;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:10%;align-items:start}
+    .about-heading h2{font:600 clamp(56px,6vw,92px)/.9 "Space Grotesk";letter-spacing:-.08em;margin:20px 0 0}
+    .about-heading h2 em{color:var(--gold)}
+    .about-copy{max-width:620px;padding-top:30px}
+    .about-copy p{color:rgba(255,255,255,.76);font-size:clamp(16px,1.3vw,20px);line-height:1.75;margin:0 0 24px}
+    .about-pillars{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.22)}
+    .about-pillars div{padding:26px 28px 34px;border-right:1px solid rgba(255,255,255,.22)}
+    .about-pillars div:last-child{border-right:0}
+    .about-pillars b{display:block;color:var(--gold);font:10px var(--mono);margin-bottom:28px}
+    .about-pillars span,.about-pillars small{display:block}
+    .about-pillars span{color:#fff;font:500 21px "Space Grotesk"}
+    .about-pillars small{color:rgba(255,255,255,.58);font:11px var(--mono);margin-top:9px}
+    @media(max-width:800px){
+      .about-layout{display:block;padding:58px 7vw 48px}
+      .about-heading h2{font-size:54px;margin-bottom:34px}
+      .about-copy{padding-top:0}
+      .about-copy p{font-size:16px;line-height:1.75}
+      .about-pillars{display:block;margin:0 7vw}
+      .about-pillars div{padding:20px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.22)}
+      .about-pillars div:last-child{border-bottom:0}
+      .about-pillars b{display:inline-block;margin:0 18px 0 0}
+      .about-pillars span{display:inline-block;font-size:19px}
+      .about-pillars small{margin:7px 0 0 31px}
+    }
+  </style>
 </head>
 <body>
   <div class="noise"></div>
